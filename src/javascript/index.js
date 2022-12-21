@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import * as dialog from "./modules/dialog.js";
-import * as nav from "./modules/navigation";
-
-=======
->>>>>>> 8bf02daa112d647337334b109f224356fc551f0d
 $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
