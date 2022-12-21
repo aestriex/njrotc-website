@@ -1,6 +1,3 @@
-import * as dialog from "./modules/dialog.js";
-import * as nav from "./modules/navigation";
-
 $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
