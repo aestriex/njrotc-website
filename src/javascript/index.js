@@ -73,6 +73,6 @@ $(document).ready(function(){
 });
 
 function closeDialog() {
-    var element = document.getElementById("dialog");
-    element.classList.add("close");
+	var element = document.getElementById("dialog");
+	element.classList.add("close");
 }
