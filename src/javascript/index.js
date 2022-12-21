@@ -75,6 +75,4 @@ $(document).ready(function(){
 function closeDialog() {
 	var element = document.getElementById("dialog");
 	element.classList.add("close");
-  
-  document.getElementById("dialog-blur").classList.remove("blur");
-}
+  }
