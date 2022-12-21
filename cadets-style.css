@@ -1,124 +1,13 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600&family=Orbitron:wght@500&family=Roboto:wght@300&display=swap");
 @import "./src/css/modules/navigation.css";
+@import "./src/css/modules/util.css";
 
 /* Pusedo selectors */
 :root {
   --heading-font-families: 'Orbitron', consolas, monospace, sans-serif;
   --body-font-families: 'Jura', Arial, sans-serif;
   --accent-color: navy;
-}
-
-::selection {
-  background-color: navy;
-  
-  color: white;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555555;
-}
-
-/* Similar Selectors */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-  text-decoration: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  
-  font-family: var(--body-font-families);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--heading-font-families);
-  text-transform: uppercase;
-}
-
-p,
-html,
-span,
-i,
-div {
-  font-family: var(--body-font-families);
-}
-
-span.typing-2 {
-  font-family: var(--heading-font-families);
-}
-
-section {
-  padding: 100px 0;
-}
-
-div.text {
-  font-family: var(--heading-font-families);
-  font-size: 1rem;
-}
-
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
-
-.events,
-.documents,
-.knowledge,
-.teams,
-.gallery,
-footer {
-  font-family: var(--body-font-families);
-}
-
-.tab .content ol {
-  padding-left: 1rem;
-}
-
-.events .events-content,
-.documents .serv-content,
-.knowledge .knowledge-content,
-.gallery .gallery-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-section .title {
-  position: relative;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-section .title::after {
-  position: absolute;
-  bottom: -8px;
-  font-size: 20px;
-  color: var(--accent-color);
-  left: 0px;
 }
 
 .tab .content a {
@@ -138,10 +27,6 @@ section .title::after {
 
 .teams {
   background-color: rgb(240, 240, 240) !important;
-}
-
-.typing-2 {
-  color: var(--accent-color);
 }
 
 .navbar.sticky .menu li a:hover {
