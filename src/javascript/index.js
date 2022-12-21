@@ -1,6 +1,3 @@
-import * as dialog from "./modules/dialog.js";
-import * as nav from "./modules/navigation";
-
 $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
@@ -78,6 +75,4 @@ $(document).ready(function(){
 function closeDialog() {
 	var element = document.getElementById("dialog");
 	element.classList.add("close");
-  
-  document.getElementById("dialog-blur").classList.remove("blur");
 }
