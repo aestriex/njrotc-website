@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>SKHS Cadet Database</title>
+    <style>
+      body {
+        font-family: Verdana, monospace, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+  <h1>
+    Volunteer Cadet Database
+      </h1>
+    </center>
+    <div id="div1"></div>
+    <script>
+      function addDatabaseEntry(name, grade, rank, platoon) {
+        const para = document.createElement("b");
+        const node = document.createTextNode(name.toString());
+        para.appendChild(node);
+        
+        const rank = document.createElement("p");
+        const node2 = document.createTextNode(rank.toString());
+        rank.appendChild(node2);
+        
+//         const grade = document.createElement("p");
+//         const node3 = document.createTextNode(grade.toString());
+//         grade.appendChild(node3);
+        
+//         const platoon = document.createElement("p");
+//         const node3 = document.createTextNode(platoon.toString());
+//         platoom.appendChild(node3);
+
+        const element = document.getElementById("div1");
+        element.append(para, rank);
+//                 element.appendChild(grade)
+
+//                 element.appendChild(platoon)
+
+      }
+
+      addDatabaseEntry("Miles Koths", "09", "E3 C/Seaman", "Gold");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The South Kitsap High School NJRTOC website."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SKHS NJROTC | Home</title>
+
+    <!-- imports/stylesheets -->
+    <link rel="stylesheet" href="src/css/root.css" />
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/SK%20Logo%20Cropped.png?v=1668466509393"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+  </head>
+
+  <body>
+    <div class="dialog" id="dialog" aria-label="Notice Dialog">
+      <div class="dialog__header" aria-label="Dialog Header">
+        <div for="dialog" class="dialog__header-heading">Chocolate Milk</div>
+        <button
+          aria-label="Close Dialog Button"
+          class="burger"
+          onclick="document.getElementById('dialog').classList.add('close');"
+        >
+          <span class="burger__box">
+            <span class="burger__bun"></span>
+            <span class="burger__bun"></span>
+          </span>
+        </button>
+      </div>
+      <div class="dialog__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi esse
+          debitis, animi quae itaque cumque reprehenderit ut ducimus eaque
+          excepturi maxime deserunt id, nulla vero a ratione in rerum incidunt!
+        </p>
+      </div>
+    </div>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"> </i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#"> NJ<span>ROTC</span> </a>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#home" class="menu-btn"> Home </a>
+          </li>
+          <li>
+            <a href="#about" class="menu-btn"> About </a>
+          </li>
+          <li>
+            <a href="#top-4" class="menu-btn"> Top 4 </a>
+          </li>
+          <li>
+            <a href="./cadets.html" class="menu-btn"> Cadets Hub </a>
+          </li>
+          <li>
+            <a href="#contact" class="menu-btn"> Contact </a>
+          </li>
+        </ul>
+        <div class="menu-btn">
+          <span class="material-symbols-sharp"> menu </span>
+        </div>
+      </div>
+    </nav>
+    <span
+      id="warning"
+      style="
+        --accent-color: navy;
+        margin: 0;
+        padding: 5px;
+        bottom: 0%;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        background-color: #1f1e1c !important;
+        color: white;
+        font-family: 'Roboto';
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      ⚠️ This is an unofficial website of the South Kitsap School District
+      NJROTC. This website is still in continued development.
+    </span>
+    <main>
+      <!-- home section start -->
+      <section class="home" id="home">
+        <div class="max-width">
+          <div class="home-content">
+            <div class="text-1">South Kitsap NJROTC</div>
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section class="about" id="about">
+        <div class="max-width">
+          <h2 class="title">
+            About
+            <span class="typing-2"> </span>
+          </h2>
+          <div class="about-content">
+            <div class="column left">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/Ball-324.jpg?v=1668466500771"
+                alt=""
+              />
+            </div>
+            <div class="column right">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                ut voluptatum eveniet doloremque autem excepturi eaque, sit
+                laboriosam voluptatem nisi delectus. Facere explicabo hic minus
+                accusamus alias fuga nihil dolorum quae. Explicabo illo unde,
+                odio consequatur ipsam possimus veritatis, placeat, ab molestiae
+                velit inventore exercitationem consequuntur blanditiis omnis
+                beatae. Dolor iste excepturi ratione soluta quas culpa
+                voluptatum repudiandae harum non.
+              </p>
+              <a href="https://navy.com" target="_blank"> Navy Website </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- top four section -->
+      <section class="top-4" id="top-4">
+        <div class="max-width">
+          <h2 class="title">Staff Members</h2>
+          <p>
+            The Top 4 of the Battalion are the ones who run the entire program.
+            They control promotions, events, and more.
+          </p>
+          <br />
+          <div class="carousel owl-carousel">
+            <div class="card">
+              <div class="box">
+                <img
+                  src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/drury.jpg?v=1668466503173"
+                  style="transform: rotate(-90deg)"
+                  alt="Picture of Allison Drury standing in front of the American flag with her dress blue uniform on"
+                />
+                <div class="text">Allison Drury</div>
+                <p>Commander</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/profile-2.jpeg" alt="" />
+                <div class="text">Makayla Motz</div>
+                <p>Lieutenant Commander</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="images/profile-3.jpeg" alt="" />
+                <div class="text">Robert "Wawa" Wawrzynski</div>
+                <p>Senior Enlisted Advisor</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img
+                  src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/givens.jpg?v=1668466506405"
+                  style="transform: rotate(-90deg)"
+                  alt="Picture of Tristan Givens standing in front of the American flag with his dress blues on"
+                />
+                <div class="text">Tristan Givens</div>
+                <p>Operations Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section class="contact" id="contact">
+        <div class="max-width">
+          <h2 class="title">Contact</h2>
+          <div class="contact-content">
+            <div class="column left">
+              <p>
+                You can contact any of the leadership personnel from the
+                Battalion if you have any questions, concerns, or other
+                inquires.
+              </p>
+              <div class="icons">
+                <div class="row">
+                  <i class="fas fa-envelope"> </i>
+                  <div class="info">
+                    <div class="head">Commander Bedell (SNSI)</div>
+                    <div class="sub-title">bedell@skschools.org</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <i class="fas fa-envelope"> </i>
+                  <div class="info">
+                    <div class="head">Senior Chief Vickers (NSI)</div>
+                    <div class="sub-title">vickers@skschools.org</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <i class="fas fa-envelope"> </i>
+                  <div class="info">
+                    <div class="head">Top 4 Email</div>
+                    <div class="sub-title">southkitsaphsnjrotc@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.7793878883554!2d-122.62186874882207!3d47.53315790093947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549037db566a1673%3A0x7ca3e72b0713d472!2sPort%20Orchard%20Armory!5e0!3m2!1sen!2sus!4v1667337791908!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0; overflow: hidden"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      Created by C/Petty Officer 3rd Class Tristin Hettinger for the South
+      Kitsap School District NJROTC
+    </footer>
+    <script src="src/javascript/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/686c4dca8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

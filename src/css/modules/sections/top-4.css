@@ -1,0 +1,88 @@
+/* SKHS NJROTC Top 4 Section Style Module
+
+  Created by Tristin H. 2022 */
+
+.top-4 {
+    color: #ffffff;
+    background: #111111;
+}
+
+.top-4 .title {
+  margin: 20px 0px 1rem 0px;
+}
+
+.top-4 .title::after {
+    background: #111111;
+    content: "battalion leadership";
+}
+
+.top-4 .carousel .card {
+  background: #222222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.top-4 .carousel .card:hover {
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+.top-4 .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.top-4 .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.top-4 .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.top-4 .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.top-4 .carousel .card:hover img {
+  border-color: #ffffff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color) !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: var(--accent-color) !important;
+}

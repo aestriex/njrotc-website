@@ -1,0 +1,21 @@
+/* SKHS NJROTC CSS Root File
+
+  Created by Tristin H. 2022 */
+
+@import "modules/util.css";
+@import "modules/navigation.css";
+@import "modules/dialog.css";
+@import "modules/sections/about.css";
+@import "modules/sections/home.css";
+@import "modules/sections/top-4.css";
+@import "modules/sections/contact.css";
+@import "modules/sections/footer.css";
+@import "modules/response.css";
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600&family=Orbitron:wght@500&family=Roboto:wght@300&display=swap");
+
+:root {
+  --accent-color: #000080;
+  --gap-width: 25px;
+  --heading-font-families: 'Orbitron', consolas, monospace, sans-serif;
+  --body-font-families: 'Jura', Arial, sans-serif;
+}

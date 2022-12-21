@@ -1,0 +1,101 @@
+/* SKHS NJROTC Base Style Module
+
+  Created by Tristin H. 2022 */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+::selection {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span.typing-2, div.text {
+  font-family: var(--heading-font-families);
+}
+
+section {
+  padding: 100px 0;
+}
+
+div.text {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font-families);
+  text-transform: uppercase;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.about,
+.services,
+.skills,
+.top-4,
+.contact,
+footer {
+  font-family: var(--body-font-families);
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: var(--heading-font-families);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -8px;
+  font-size: 20px;
+  color: var(--accent-color);
+  background: #ffffff;
+  left: 0px;
+}
+
+.typing-2 {
+  color: var(--accent-color);
+}

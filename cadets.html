@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SKHS NJROTC | Cadet Hub</title>
+    <link rel="stylesheet" href="cadets-style.css" />
+    <script
+      src="https://kit.fontawesome.com/686c4dca8e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/SK%20Logo%20Cropped.png?v=1668466509393"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,100,0,0"
+    />
+  </head>
+
+  <body>
+    <script defer>
+      $(".sailing").click(function () {
+        console.log("Clicked");
+        window.location.href =
+          "https://skhs-njrotc-sample.glitch.me/teams/sailing/";
+      });
+    </script>
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">NJ<span>ROTC</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="./" class="menu-btn">Home</a></li>
+          <li><a href="#events" class="menu-btn">Events</a></li>
+          <li><a href="#documents" class="menu-btn">Documents</a></li>
+          <li><a href="#knowledge" class="menu-btn">Knowledge</a></li>
+          <li>
+            <a href="#teams" class="menu-btn" id="teams-menu-btn"
+              >Teams <i class="fa-solid fa-angle-down"></i>
+              <div class="teams-dropdown">
+                <ul>
+                  <li><a class="teams-dropdown-item">Unarmed Drill</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Armed Drill</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Color Guard</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Academics</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Orienteering</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Marksmanship</a></li>
+                  <br />
+                  <li><a class="teams-dropdown-item">Strength</a></li>
+                  <br />
+                  <li>
+                    <a class="teams-dropdown-item" href="/teams/sailing/"
+                      >Sailing</a
+                    >
+                  </li>
+                </ul>
+              </div></a
+            >
+          </li>
+          <li><a href="#gallery" class="menu-btn">gallery</a></li>
+        </ul>
+        <div class="menu-btn">
+          <span class="material-symbols-sharp"> menu </span>
+        </div>
+      </div>
+    </nav>
+    <span
+      id="warning"
+      style="
+        --accent-color: navy;
+        margin: 0;
+        padding: 0;
+        bottom: 0%;
+        box-sizing: border-box;
+        text-decoration: none;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        height: 2rem;
+        background-color: #1f1e1c !important;
+        color: white;
+        font-family: 'Roboto';
+        text-align: center;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      "
+      >⚠️ This is an unofficial website of the South Kitsap School District
+      NJROTC. This website is still in continued development.</span
+    >
+
+    <!-- home section start -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">NJROTC Cadet Hub</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- events section start -->
+    <section class="events" id="events">
+      <div class="max-width">
+        <h2 class="title">Upcoming Events</h2>
+        <p>
+          This list only displays important or upcoming events of the battalion.
+          If you want to see a more detailed, expanded list, or have questions
+          events an event, gallery your Platoon Commander or Mustering Chief.
+          <br /><br />
+          Visit the SKHS NJROTC Google Calender
+          <a
+            style="text-decoration: underline; color: navy"
+            target="_blank"
+            href="https://calendar.google.com/calendar/u/1?cid=Y18xMGQ1NGZjMGU2OTQwMDBjZjZmMjUyNjJkYTJhZDY2ZTM2OGQ5ZWU5M2QxMDRhM2ZiMjNhMDljOTFhN2ViOTQ5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+            >here</a
+          >
+          to see a full list of upcoming events, drill meets, and more.
+        </p>
+        <br />
+        <!-- Accordian -->
+        <div id="event-accordion-container">
+          <code>There are no upcoming events.</code>
+          <div class="accordion-event" style="display: none;">
+            <input id="tab-1" type="checkbox" />
+            <label for="tab-1">Staff Meeting November</label>
+
+            <div class="content">
+              <div class="quick-info-grid">
+                <div class="location grid-item">
+                  <span class="material-symbols-sharp icon"> map </span>
+                  <span class="quick-info-header">Location</span><br />
+                  <span class="quick-info-text">Port Orchard Armory</span>
+                </div>
+                <div class="date grid-item">
+                  <span class="material-symbols-sharp icon"> schedule </span>
+                  <span class="quick-info-header">Time [&] Date</span><br />
+                  <span class="quick-info-text">2022-11-17 @ 1430</span>
+                </div>
+                <div class="target grid-item">
+                  <span class="material-symbols-sharp icon">
+                    supervisor_account
+                  </span>
+                  <span class="quick-info-header">Target</span><br />
+                  <span class="quick-info-text">Battalion Staff</span>
+                </div>
+              </div>
+
+              Description here...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- documents section start -->
+    <section class="documents" id="documents">
+      <div class="max-width">
+        <h2 class="title">Documents</h2>
+        <div class="serv-content">
+          <div class="card">
+            <div class="box">
+              <i class="fas fa-id-card"></i>
+              <div class="text">Cadet Entrant Form</div>
+              <p>
+                The Cadet Entrant Form is completed by all cadets prior to
+                enlistment in the NJRTOC. It collects personal information to
+                record for the Navy.
+              </p>
+              <br />
+              <a class="card-button" href="https://example.com" target="_blank"
+                >Open Form</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-person-military-pointing"></i>
+              <div class="text">Cadet Field Manual</div>
+              <p>
+                The Cadet Field Manual is the basic reference for every Cadet.
+                It holds everything cadets must know about the Navy and NJROTC;
+                including ribbons, uniform regs, and more.
+              </p>
+              <br />
+              <a
+                class="card-button"
+                href="https://www.netc.navy.mil/Portals/46/NSTC/NJROTC/docs/CFM%2011th%20Edition%20revised.pdf"
+                target="_blank"
+                >Open Document</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-book"></i>
+              <div class="text">Divisonal Manual</div>
+              <p>The divisonal manual is [...]</p>
+              <br />
+              <a
+                class="card-button"
+                href="https://cdn.glitch.global/71169d24-ee9f-4b76-bb3a-44aedb03f000/NWD%26RC%20Manual%20updated2022%20(2).pdf?v=1667429673185"
+                target="_blank"
+                >Open Document</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- knowledge section start -->
+    <section class="knowledge" id="knowledge">
+      <div class="max-width">
+        <h2 class="title">Knowledge</h2>
+        <div class="regulations-content">
+          <div class="event-accordion-container">
+            <div class="accordion-event">
+              <input id="tab-100" type="checkbox" />
+		<label for="tab-100">Orders of the Sentry</label>
+              <div class="content">
+                  <li>
+                    Take charge of this post and all government property in
+                    view.
+                  </li>
+                  <li>
+                    Walk my post in a military manner, keeping always on the
+                    alert, and observing everything that takes place within
+                    sight or hearing.
+                  </li>
+                  <li>
+                    Report all violations of orders I am instructed to enforce.
+                  </li>
+                  <li>
+                    Repeat all calls from any post more distant than the
+                    guardhouse or quarterdeck than my own.
+                  </li>
+                  <li>Quit my post only when properly relieved.</li>
+                  <li>
+                    Recieve, obey, and pass on to the Sentry who relieves me all
+                    orders from the Commanding Officer, Command Duty Officer,
+                    Officer of the Deck, and Officers and Petty Officers of the
+                    watch only.
+                  </li>
+                  <li>Talk to no one except in the line of duty.</li>
+                  <li>Give the alarm in case of fire or disorder.</li>
+                  <li>
+                    Call the Officer of the Deck in any case not covered by
+                    instructions.
+                  </li>
+                  <li>
+                    Salute all Officers and all colors and standards not cased.
+                  </li>
+                  <li>
+                    Be especially watchful at night, and during the time for
+                    challenging, challenge all persons on or near my post and
+                    allow no one to pass without proper authority.
+                  </li>
+              </div>
+            </div>
+
+            <div class="accordion-event">
+              <input type="checkbox" id="tab-101" />
+              <label for="tab-101">Leadership Principles</label>
+              <div class="content">
+                  <li>Know yourself and seek self improvement.</li>
+                  <li>Be technically proficient.</li>
+                  <li>
+                    Seek responsibility and take responsibility for your
+                    actions.
+                  </li>
+                  <li>Make sound and timely decisions.</li>
+                  <li>Set the example.</li>
+                  <li>Know your people and look out for their well-being.</li>
+                  <li>Keep your workers informed.</li>
+                  <li>Develop a sense of responsibility in your workers.</li>
+                  <li>
+                    Ensure that tasks are understood, supervised, and
+                    accomplished.
+                  </li>
+                  <li>Train as a team.</li>
+                  <li>Use the full capabilites of your organization.</li>
+              </div>
+            </div>
+
+            <div class="accordion-event">
+              <input type="checkbox" id="tab-102" />
+              <label for="tab-102">Leadership Traits</label>
+              <div class="content">
+                  <li>Justice</li>
+                  <li>Judgement</li>
+                  <li>Decicessivness</li>
+                  <li>Initiative</li>
+                  <li>Dependability</li>
+                  <li>Tact</li>
+                  <li>Integrity</li>
+                  <li>Endurance</li>
+                  <li>Bearing</li>
+                  <li>Unselfishness</li>
+                  <li>Courage</li>
+                  <li>Knowledge</li>
+                  <li>Loyalty</li>
+                  <li>Enthusiasm</li>
+                  <br />
+                  The Leadership Traits are commonly memorized with the acronym
+                  JJ-DID-TIE-BUCKLE.
+              </div>
+            </div>
+
+            <div class="accordion-event">
+              <input type="checkbox" id="tab-103" />
+              <label for="tab-103">Chain of Command</label>
+              <div class="content">
+                There is a full Battalion COC chart located at the below Google
+                Drawing.
+                <br /><br />
+                <a
+                  href="https://docs.google.com/drawings/d/1wKo9q4V08dJfvTH2-QVAufetoF3zlyg51oOZHaivmyg/view"
+                  target="_blank"
+                  >Open Drawing</a
+                >
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+      <div class="max-width">
+        <h2 class="title">Teams</h2>
+        <p class="desc">Teams and stuff</p>
+        <br />
+        <div class="carousel owl-carousel">
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/985fd2f4-d387-48ca-a933-098a967256e3.image.png?v=1669843070772"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Unarmed Drill</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutenant Commander
+                  Makayla Motz<br /><strong>Executive Officer:</strong> C/Chief
+                  Petty Officer Miranda Beam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <a
+                href="./teams/armed-drill.html"
+                style="width: 100%; height: 100%; background: rgba(0, 0, 0, 0)"
+              ></a>
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/b35933c2-80ca-47f8-8279-f932e46d041d.image.png?v=1669843134307"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Armed Drill</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutendant JG Zoie
+                  Collins<br /><strong>Executive Officer:</strong> C/Chief Petty
+                  Officer Anthony Bailey
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/ecae434e-da61-453d-b3a7-7ef46eab5cae.image.png?v=1669843267899"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Academics</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutenant JG Zackary
+                  Morris<br /><strong>Executive Officer:</strong> C/Chief Petty
+                  Officer Nic Clay
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/88980537-3b92-4107-a12a-409106e1c2ed.image.png?v=1669843359398"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Orienteering</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Ensign Joshua
+                  Charley<br /><strong>Executive Officer:</strong> C/Chief Petty
+                  Officer Fredrick Davis
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/9f95835d-b1c4-443c-be85-3ca8a962d6d7.image.png?v=1669841940373"
+                alt=""
+              />
+              <div class="text-wrapper">
+                <div class="text">Colorguard</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutenant JG Connor
+                  Maybarry<br /><strong>Executive Officer:</strong> C/Chief
+                  Petty Officer Sabastian Charleton
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/30fe8c94-169d-46f4-a82d-cda646fa44b3.image.png?v=1669843003471"
+                alt=""
+              />
+              <div class="text-wrapper">
+                <div class="text">Marksmanship</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutendant JG Sydney
+                  Kinas<br /><strong>Executive Officer:</strong> C/Chief Petty
+                  Officer Chase Riff
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/ab13f2e6-efd4-47f3-81da-b20e1ab9c5dd.image.png?v=1669841744324"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Strength</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Ensign Samuel
+                  Stockton<br /><strong>Executive Officer:</strong> C/Chief
+                  Petty Officer Haiden Turner
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card sailing">
+            <a
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: none;
+              "
+              href="/teams/sailing"
+            ></a>
+            <div class="box">
+              <img
+                src="https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/0527964f-c3d8-425c-a091-387de882a7fa.image.png?v=1669843430061"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">Sailing</div>
+                <p>
+                  <strong>Commanding Officer:</strong> C/Lieutenant Tristan
+                  Givens<br /><strong>Executive Officer:</strong>
+                  Position Not Filled
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card-placeholder">
+            <div class="box">
+              <img
+                src="https://lh4.googleusercontent.com/yrOTBzNpeWlOBb0OJZ7qqBiX5UBo_ksgxlZAuoNWQ9EZnkZxplXFcu_AbokEldmK86mnBHwas2imVWA=w1802-h825"
+                alt=""
+              />
+              <div class="text-placeholder">CYBER PATRIOT</div>
+              
+              <div class="text-wrapper">
+                <div class="text">CYBER PATRIOT</div>
+                <p>
+                  <strong>Commanding Officer:</strong> Unknown<br /><strong
+                    >Executive Officer:</strong
+                  >
+                  Unknown
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-placeholder" style="width: 0%!important;">
+            <div class="box">
+              <img
+                src="https://lh4.googleusercontent.com/yrOTBzNpeWlOBb0OJZ7qqBiX5UBo_ksgxlZAuoNWQ9EZnkZxplXFcu_AbokEldmK86mnBHwas2imVWA=w1802-h825"
+                alt=""
+              />
+
+              <div class="text-wrapper">
+                <div class="text">JLAB</div>
+                <p>
+                  <strong>Commanding Officer:</strong> Unknown<br /><strong
+                    >Executive Officer:</strong
+                  >
+                  Unknown
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section start -->
+    <section class="gallery" id="gallery">
+      <div class="max-width">
+        <h2 class="title">Gallery</h2>
+        <div class="gallery-content">
+          <div class="column left">
+            <p>
+              Below is a gallery of images which represent the battalion and its
+              goals, achivements, etc.
+            </p>
+            <div class="image-container">
+              <img
+                style="transform: rotate(-90deg)"
+                src="./src/drury.jpg"
+                alt="Battalion Commander Drury"
+              />
+              <img
+                style="transform: rotate(-90deg)"
+                src="./src/givens.jpg"
+                alt="Battalion Operations Officer"
+              />
+              <img src="./src/SK Logo Cropped.png" alt="Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+      Created by C/Petty Officer 3rd Class Tristin Hettinger for the South Kitsap School District
+      NJROTC
+    </footer>
+
+    <script src="./src/javascript/index.js"></script>
+  </body>
+</html>

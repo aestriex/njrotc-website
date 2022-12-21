@@ -1,0 +1,67 @@
+/* SKHS NJROTC Home Section Style Module
+
+  Created by Tristin H. 2022 */
+
+.home {
+  display: flex;
+  background: url("https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/94382936356.png?v=1668466494161")
+    no-repeat center;
+  background-color: black;
+  height: 100vh;
+  color: #ffffff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto Light", sans-serif;
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.home .max-width .row {
+  margin-right: 0;
+}
+
+.home .home-content .text-1 {
+  font-size: 27px;
+  padding-top: 35rem;
+  font-family: var(--heading-font-families);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.home .home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: var(--accent-color);
+  color: #ffffff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+  color: var(--accent-color);
+  background: none;
+}
