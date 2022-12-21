@@ -17,5 +17,5 @@ function nav() {
 }
 
 module.exports = {
-    nav = nav();
+    nav:  nav(),
 }
