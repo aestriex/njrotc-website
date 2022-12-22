@@ -38,7 +38,7 @@
   </head>
 
   <body>
-    <div class="dialog" id="dialog" aria-label="Notice Dialog">
+    <div class="dialog" id="dialog" aria-label="Notice Dialog" role="alertdialog">
       <div class="dialog__header" aria-label="Dialog Header">
         <div for="dialog" class="dialog__header-heading">Chocolate Milk</div>
         <button
@@ -63,7 +63,7 @@
     <div class="scroll-up-btn">
       <i class="fas fa-angle-up"> </i>
     </div>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation">
       <div class="max-width">
         <div class="logo">
           <a href="#"> NJ<span>ROTC</span> </a>
@@ -113,6 +113,7 @@
         justify-content: center;
         align-items: center;
       "
+      role="alert"
     >
       ⚠️ This is an unofficial website of the South Kitsap School District
       NJROTC. This website is still in continued development.
@@ -242,6 +243,7 @@
             </div>
             <div class="column right">
               <iframe
+              aria-label="Google Maps embed showing the location of the SKHS NJROTC Armory"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.7793878883554!2d-122.62186874882207!3d47.53315790093947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549037db566a1673%3A0x7ca3e72b0713d472!2sPort%20Orchard%20Armory!5e0!3m2!1sen!2sus!4v1667337791908!5m2!1sen!2sus"
                 width="600"
                 height="450"
