@@ -1,0 +1,233 @@
+/* SKHS NJROTC Accordion Style Module
+
+  Created by Tristin H. 2022 */
+
+/* Upcoming Events Accordion Styles */
+.accordion-event,
+.accordion-event * {
+  font-family: var(--heading-font-families);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.accordion-event .content,
+.accordion-event .content li {
+  background: rgb(240, 240, 240);
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+  transition: 0.3s;
+  font-family: var(--body-font-families) !important;
+}
+
+.accordion-event input {
+  display: none;
+}
+
+.accordion-event label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+
+  font-weight: 700;
+  color: white;
+  color: var(--accent-color);
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: var(--heading-font-families);
+  text-transform: uppercase;
+}
+
+.accordion-event label:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.accordion-event input:checked ~ label {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.accordion-event input:checked ~ .content {
+  max-height: 100vh;
+  padding: 1rem;
+}
+
+.accordion-event label::after {
+  display: block;
+  content: "ᐳ";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 100;
+  transition: all 0.4s;
+}
+
+.accordion-event input:checked ~ label::after {
+  transform: rotate(90deg);
+}
+
+.quick-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 1fr inherit;
+
+  margin-bottom: 1rem;
+
+  transition: all 0.3s ease;
+}
+
+.quick-info-grid .grid-item {
+  display: grid;
+  grid-template-rows: 10px;
+  grid-template-columns: 40px;
+
+  width: inherit;
+
+  transition: all 0.3s ease;
+}
+
+.quick-info-grid .grid-item .icon {
+  font-size: 2rem;
+
+  margin-top: 1px;
+
+  grid-row: 1;  
+
+  grid-column: 1;
+}
+
+.quick-info-grid .grid-item .quick-info-header {
+  text-transform: uppercase;
+  font-size: small;
+
+  position: relative;
+
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.quick-info-grid .grid-item .quick-info-text {
+  margin-top: 15px;
+
+  grid-row: 1;
+  grid-column: 2;
+
+  font-family: var(--body-font-families);
+}
+
+@media (max-width: 649px) {
+  .quick-info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 500px) {
+  .quick-info-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    transition: all 0.3s ease;
+  }
+}
+
+/* Knowledge Accordion Styles */
+.accordion-tab {
+  font-family: var(--heading-font-families);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.accordion-tab .content,
+.accordion-tab .content ul, .accordion-tab .content {
+  background: rgb(240, 240, 240);
+  overflow: hidden;
+  max-height: 0vh;
+  padding: 0rem 1rem 0rem 1rem;
+  font-family: var(--body-font-families);
+  transition: all 0.3s;
+}
+
+.accordion-tab input {
+  display: none;
+}
+
+.accordion-tab label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: 700;
+  color: white;
+  color: var(--accent-color);
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  font-family: var(--heading-font-families);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.accordion-tab label:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.accordion-tab input:checked ~ label {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.accordion-tab input:checked ~ .content {
+  max-height: 100vh;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.accordion-tab input ~ .content ol {
+    margin: 0rem 1rem 0rem 1rem;
+    transition: all 0.3s;
+}
+
+.accordion-tab input ~ .content ol li {
+    padding: 2.5px;
+    transition: padding 0.3s ease;
+}
+
+.accordion-tab label::after {
+  display: block;
+  content: "ᐳ";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 100;
+  transition: all 0.4s;
+}
+
+.accordion-tab input:checked ~ label::after {
+  transform: rotate(90deg);
+}
+
+#content-tab-103 {
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 649px) {
+  .quick-info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    transition: all 0.3s ease;
+  }
+}
