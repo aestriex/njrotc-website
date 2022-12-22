@@ -124,6 +124,16 @@ section .title::after {
   color: #fff;
 }
 
+.card-button::after {
+  filter: invert(1);
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-button::after {
+  filter: invert(0);
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 947px) {
   .menu.active {
     overflow: scroll;
