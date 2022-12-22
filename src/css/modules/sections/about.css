@@ -49,8 +49,7 @@
 
 .about .about-content .right a {
   display: inline-block;
-  background: var(--accent-color);
-  color: #ffffff;
+  color: var(--accent-color);
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
@@ -61,6 +60,5 @@
 }
 
 .about .about-content .right a:hover {
-  color: var(--accent-color);
-  background: none;
+  transform: translate(0px, -5px);
 }

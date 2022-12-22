@@ -223,6 +223,10 @@
     text-transform: uppercase;
 }
 
+#content-tab-103::after {
+    display: none;
+}
+
 @media (max-width: 649px) {
   .quick-info-grid {
     grid-template-columns: 1fr 1fr;
