@@ -4,7 +4,7 @@
 
 .home {
   display: flex;
-  background: url("https://cdn.glitch.global/cab49587-eb9f-4679-b30c-5261c1642623/94382936356.png?v=1668466494161")
+  background: url("https://lh4.googleusercontent.com/nYbmxkPAEPQThvou7FUlm4AtsA6SHjs3MmR7dWuXy8b64zxSp_ASCePoCZvAnVNYha5A7Euzp_DKi7w=w1905-h926")
     no-repeat center;
   background-color: black;
   height: 100vh;
@@ -12,7 +12,7 @@
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Roboto Light", sans-serif;
+  font-family: var(--heading-font-families);
 }
 
 .home .max-width {
