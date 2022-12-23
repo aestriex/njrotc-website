@@ -186,8 +186,8 @@ section .title::after {
 /* home section styling */
 .home {
   display: flex;
-  background: url("https://lh3.googleusercontent.com/HOJr1Zs7-xkPYM9FJDdX82LUsQRhdtqACZr9AsMomiNxopE4LnnlSVL1hGrKeVULasD8pf-0B2L_kJI=w1802-h825")
-    no-repeat center;
+  /* background: url("https://lh3.googleusercontent.com/HOJr1Zs7-xkPYM9FJDdX82LUsQRhdtqACZr9AsMomiNxopE4LnnlSVL1hGrKeVULasD8pf-0B2L_kJI=w1802-h825")  
+  no-repeat center; */
   background-color: black;
   height: 100vh;
   color: #fff;
